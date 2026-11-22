@@ -1,0 +1,4 @@
+.git
+identities
+**/__pycache__
+*.egg-info

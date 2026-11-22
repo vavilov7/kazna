@@ -1,0 +1,23 @@
+services:
+  kazna:
+    build: .
+    image: kazna
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - .:/app
+      - ./identities:/data
+
+  # Local relay for testing without posting to public relays:
+  #   docker compose --profile dev up -d relay
+  #   docker compose run --rm kazna post <name> --relay ws://relay:8080 -m "test"
+  relay:
+    image: scsibug/nostr-rs-relay:0.9.0
+    profiles: ["dev"]
+    ports:
+      - "7777:8080"
+
+  # Stacker News's NIP-46 login (same NDK version) as a local test client:
+  #   docker compose run --rm sn-client "<bunker://…>" [--nip44]
+  sn-client:
+    build: tests/sn-client
+    profiles: ["dev"]

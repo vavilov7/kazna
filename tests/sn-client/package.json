@@ -1,0 +1,10 @@
+{
+  "name": "sn-client",
+  "private": true,
+  "type": "module",
+  "description": "Stacker News's NIP-46 login, reproduced with the NDK version it ships, to test kazna locally",
+  "dependencies": {
+    "@nostr-dev-kit/ndk": "2.12.2",
+    "@noble/curves": "1.6.0"
+  }
+}
