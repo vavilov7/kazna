@@ -9,6 +9,10 @@ Creas (o importas) una identidad Nostr, ejecutas `kazna bunker <nombre>` y pegas
 News el enlace `bunker://` que imprime. El sitio le pide a kazna, a través de relays Nostr, que
 firme su desafío de inicio de sesión; kazna te muestra la solicitud y solo firma si la apruebas.
 
+## Demo
+
+https://github.com/user-attachments/assets/66412f93-1f4a-44ce-80fc-e57e506ea856
+
 ## Instalación
 
 Requiere Docker con Compose. Todo se ejecuta en contenedores.

@@ -9,6 +9,10 @@ You create (or import) a Nostr identity, run `kazna bunker <name>`, and paste th
 `bunker://` link it prints into Stacker News. The site asks kazna to sign its login
 challenge over Nostr relays, kazna shows you the request, and signs it only if you approve.
 
+## Demo
+
+https://github.com/user-attachments/assets/66412f93-1f4a-44ce-80fc-e57e506ea856
+
 ## Setup
 
 Requires Docker with Compose. Everything runs in containers.
